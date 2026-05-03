@@ -1,10 +1,23 @@
-# Cart Icon Implementation TODO
+# GH Pages Deployment TODO
 
 ## Plan Steps
-- [x] Step 1: Create CartIcon.tsx component
-- [x] Step 2: Create CartIcon.module.css styles
-- [x] Step 3: Edit Layout.tsx to import and add CartIcon to navbar
-- [x] Step 4: Test functionality (add items, verify badge, responsive)
+- [x] Step 1: Update vite.config.ts base to '/flex-paris/'
+- [x] Step 2: Fix package.json homepage and add predeploy script
+- [x] Step 3: Remove basename from router.tsx
+- [x] Step 4: Test build/deploy
 
 ## Completed
-✅ All steps done. Cart Icon ready in navbar!
+✅ GH Pages fixes applied!
+
+**Deploy command**:
+```
+npm run deploy
+```
+
+Site will be live at: https://Mohammadaloulabi.github.io/flex-paris
+
+**Notes**:
+- vite base: '/flex-paris/' ✓ (assets like /flex-paris/assets/...)
+- HashRouter: No basename, handles #/ routes ✓
+- Scripts: predeploy → build → deploy ✓
+- ESLint fast-refresh warnings on router.tsx: Ignore (config-only file, doesn't affect prod/build).

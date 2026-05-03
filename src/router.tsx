@@ -43,6 +43,4 @@ const routes: RouteObject[] = [
   },
 ];
 
-export const router = createHashRouter(routes,{
-  basename: '/flex-paris',
-});
+export const router = createHashRouter(routes);
