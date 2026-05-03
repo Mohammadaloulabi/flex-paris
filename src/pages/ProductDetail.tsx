@@ -83,8 +83,8 @@ export default function ProductDetail() {
   const { addItem } = useCart()
   const navigate = useNavigate()
 
-  const [size, setSize] = useState(product.sizes?.[0] ?? '')
-  const [color, setColor] = useState(product.colors?.[0] ?? '')
+  const [size, setSize] = useState('')
+  const [color, setColor] = useState('')
   const [showPopup, setShowPopup] = useState(false)
 
   if (!product) {
@@ -95,6 +95,12 @@ export default function ProductDetail() {
       </div>
     )
   }
+
+  // Initialize size/color after product check
+  const defaultSize = product.sizes?.[0] ?? ''
+  const defaultColor = product.colors?.[0] ?? ''
+  if (size === '' && defaultSize) setSize(defaultSize)
+  if (color === '' && defaultColor) setColor(defaultColor)
 
   function handleAddToCart() {
     addItem({

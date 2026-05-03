@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import CartIcon from "./components/CartIcon";
 import "./styles/pages.css";
 import "./styles/dark.css";
 
@@ -72,8 +73,10 @@ const [menuOpen, setMenuOpen] = useState(false);
             onClick={() => setTheme(t => t === "light" ? "dark" : "light")}
             aria-label={theme === "light" ? "Activer le mode sombre" : "Activer le mode clair"}
           >
-            {theme === "light" ? "🌙" : "☀️"}
+{theme === "light" ? "🌙" : "☀️"}
           </button>
+
+          <CartIcon />
 
           {langOpen && (
             <div className="lang-dropdown">
