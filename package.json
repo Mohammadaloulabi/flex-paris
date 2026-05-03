@@ -3,7 +3,7 @@
   "name": "flex-paris",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://USERNAME.github.io/flex-paris",
+  "homepage": "https://mohammadaloulabi.github.io/flex-paris/",
   "type": "module",
   "scripts": {
     "dev": "vite",
