@@ -1,0 +1,342 @@
+/* ============================================================
+   DARK MODE OVERRIDES
+   Applied when <html class="dark"> is set
+   ============================================================ */
+
+/* ── Layout & body ────────────────────────────────────────── */
+html.dark body,
+html.dark .app-layout,
+html.dark .accueil-page,
+html.dark .voiture-page,
+html.dark .boutique-page,
+html.dark .product-detail-page,
+html.dark .cart-page,
+html.dark .contact-page,
+html.dark .societe-page,
+html.dark .content-page {
+  background-color: var(--bg-page);
+  color: var(--text-dark);
+}
+
+/* ── Header ───────────────────────────────────────────────── */
+html.dark .app-header {
+  background-color: var(--bg-header);
+  border-bottom-color: var(--border-color);
+}
+
+html.dark .brand {
+  color: var(--primary-color);
+}
+
+html.dark .nav-toggle span {
+  background: var(--text-dark);
+}
+
+html.dark .app-nav {
+  background: var(--bg-nav-mobile);
+}
+
+html.dark .nav-link {
+  color: var(--text-dark);
+  background: transparent;
+}
+
+html.dark .nav-link:hover {
+  color: var(--primary-color);
+}
+
+html.dark .nav-link.active {
+  color: var(--primary-color);
+}
+
+@media (max-width: 960px) {
+  html.dark .app-nav {
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+  }
+
+  html.dark .nav-link {
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  html.dark .nav-link:hover {
+    background: rgba(255, 149, 0, 0.1);
+  }
+
+  html.dark .nav-link.active {
+    background: rgba(255, 149, 0, 0.15);
+  }
+}
+
+/* ── Footer ───────────────────────────────────────────────── */
+html.dark .app-footer {
+  background-color: var(--bg-footer);
+  border-top-color: var(--border-color);
+  color: var(--text-light);
+}
+
+html.dark .footer-contact {
+  color: var(--text-dark);
+}
+
+html.dark .footer-copy {
+  color: var(--text-light);
+}
+
+html.dark .social-link {
+  background-color: rgba(255, 149, 0, 0.08);
+  border-color: var(--border-color);
+  color: var(--primary-color);
+}
+
+html.dark .social-link:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* ── Headings ─────────────────────────────────────────────── */
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+  color: var(--text-dark);
+}
+
+html.dark h1 {
+  color: var(--primary-color);
+}
+
+/* ── Hero section ─────────────────────────────────────────── */
+html.dark .hero-section {
+  background: linear-gradient(135deg, var(--bg-page) 0%, #1a1200 100%);
+}
+
+html.dark .hero-content h1 {
+  color: var(--primary-color);
+}
+
+html.dark .hero-subtitle {
+  color: var(--text-light);
+}
+
+/* ── Service cards ────────────────────────────────────────── */
+html.dark .services-preview h2 {
+  color: var(--text-dark);
+}
+
+html.dark .service-card {
+  background-color: var(--bg-card);
+  border-color: var(--border-color);
+  color: var(--text-dark);
+}
+
+html.dark .service-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 8px 24px rgba(255, 149, 0, 0.1);
+}
+
+html.dark .service-card h3 {
+  color: var(--primary-color);
+}
+
+html.dark .service-card p {
+  color: var(--text-light);
+}
+
+/* ── Boutique ─────────────────────────────────────────────── */
+html.dark .boutique-title {
+  color: var(--primary-color);
+}
+
+html.dark .product-card {
+  background: var(--bg-card);
+  border-color: var(--border-color);
+}
+
+html.dark .product-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 28px rgba(255, 149, 0, 0.1);
+}
+
+html.dark .product-card__name {
+  color: var(--text-dark);
+}
+
+html.dark .product-card__desc {
+  color: var(--text-light);
+}
+
+/* ── Product detail ───────────────────────────────────────── */
+html.dark .product-detail__name {
+  color: var(--text-dark);
+}
+
+html.dark .product-detail__desc {
+  color: var(--text-light);
+}
+
+html.dark .product-detail__specs li {
+  color: var(--text-light);
+}
+
+html.dark .product-detail__ref {
+  color: var(--text-light);
+}
+
+html.dark .product-detail__label {
+  color: var(--text-dark);
+}
+
+html.dark .product-detail__select {
+  background: var(--bg-input);
+  border-color: var(--border-color);
+  color: var(--text-dark);
+}
+
+/* ── Popup ────────────────────────────────────────────────── */
+html.dark .popup-overlay {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+html.dark .popup {
+  background: var(--bg-card);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+html.dark .popup__msg {
+  color: var(--text-dark);
+}
+
+html.dark .popup__question {
+  color: var(--text-light);
+}
+
+/* ── Cart ─────────────────────────────────────────────────── */
+html.dark .cart-title {
+  color: var(--text-dark);
+}
+
+html.dark .cart-item {
+  background: var(--bg-card);
+  border-color: var(--border-color);
+}
+
+html.dark .cart-item__name {
+  color: var(--text-dark);
+}
+
+html.dark .cart-item__meta,
+html.dark .cart-item__unit {
+  color: var(--text-light);
+}
+
+html.dark .cart-item__subtotal {
+  color: var(--text-dark);
+}
+
+html.dark .cart-item__qty button {
+  background: var(--bg-card);
+  border-color: var(--border-color);
+  color: var(--text-dark);
+}
+
+html.dark .cart-item__qty button:hover {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+html.dark .cart-summary {
+  background: #1a1200;
+  border-color: rgba(255, 149, 0, 0.2);
+}
+
+html.dark .cart-summary__title {
+  color: var(--text-dark);
+}
+
+html.dark .cart-summary__row {
+  color: var(--text-light);
+}
+
+html.dark .cart-summary__row--total {
+  color: var(--text-dark);
+  border-top-color: var(--border-color);
+}
+
+html.dark .cart-page--success h2,
+html.dark .cart-page--empty p {
+  color: var(--text-dark);
+}
+
+/* ── Contact ──────────────────────────────────────────────── */
+html.dark .contact-block {
+  background: var(--bg-contact-block);
+  border-color: rgba(255, 149, 0, 0.15);
+}
+
+html.dark .contact-name {
+  color: var(--text-dark);
+}
+
+html.dark .contact-block p {
+  color: var(--text-light);
+}
+
+/* ── Société ──────────────────────────────────────────────── */
+html.dark .societe-block {
+  background: var(--bg-contact-block);
+  border-color: rgba(255, 149, 0, 0.15);
+}
+
+html.dark .societe-block p {
+  color: var(--text-light);
+}
+
+html.dark .societe-article p,
+html.dark .societe-article li {
+  color: var(--text-light);
+}
+
+html.dark .societe-article h3 {
+  color: var(--primary-color);
+}
+
+html.dark .societe-cgv h2 {
+  color: var(--text-dark);
+  border-bottom-color: var(--primary-color);
+}
+
+/* ── Promo carousel cards ─────────────────────────────────── */
+html.dark .promo-card {
+  background: var(--bg-card);
+  border-color: var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+html.dark .promo-card__label {
+  color: var(--text-dark);
+}
+
+html.dark .promo-section__title {
+  color: var(--text-dark);
+}
+
+html.dark .promo-section__sub {
+  color: var(--text-light);
+}
+
+/* ── Buttons ──────────────────────────────────────────────── */
+html.dark .btn-back {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+html.dark .btn-back:hover {
+  background-color: var(--primary-dark);
+}
+
+/* ── Page header (service pages) ──────────────────────────── */
+html.dark .page-header h1 {
+  color: var(--primary-color);
+}
