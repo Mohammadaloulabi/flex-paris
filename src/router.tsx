@@ -1,4 +1,4 @@
-import { createBrowserRouter, createHashRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 import type { RouteObject } from 'react-router-dom';
 import { lazy } from 'react';
 import Layout from './Layout';
