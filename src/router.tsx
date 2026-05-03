@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, createHashRouter } from 'react-router-dom';
 import type { RouteObject } from 'react-router-dom';
 import { lazy } from 'react';
 import Layout from './Layout';
@@ -43,6 +43,6 @@ const routes: RouteObject[] = [
   },
 ];
 
-export const router = createBrowserRouter(routes,{
+export const router = createHashRouter(routes,{
   basename: '/flex-paris',
 });
