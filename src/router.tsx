@@ -44,5 +44,5 @@ const routes: RouteObject[] = [
 ];
 
 export const router = createBrowserRouter(routes,{
-   basename:"/flex-paris"
+   basename:"/flex-paris/"
 });
