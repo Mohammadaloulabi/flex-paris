@@ -4,6 +4,16 @@ import CartIcon from "./components/CartIcon";
 import "./styles/pages.css";
 import "./styles/dark.css";
 
+import enFlag from "./assets/images/en.png";
+import frFlag from "./assets/images/fr.png";
+import arFlag from "./assets/images/sy.png";
+
+const flags = {
+  en: enFlag,
+  fr: frFlag,
+  ar: arFlag
+} as const;
+
 const navItems = [
   { to: "/",            label: "Accueil"      },
   { to: "/boutique",    label: "Boutique"     },
@@ -33,9 +43,9 @@ const [menuOpen, setMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
 
   const languages = [
-    { code: 'fr' as const, name: 'Français', flag: '/flags/fr.png' },
-    { code: 'en' as const, name: 'English', flag: '/flags/gb.png' },
-    { code: 'ar' as const, name: 'العربية', flag: '/flags/sy.png' },
+{ code: 'fr' as const, name: 'Français', flag: flags.fr },
+{ code: 'en' as const, name: 'English', flag: flags.en },
+{ code: 'ar' as const, name: 'العربية', flag: flags.ar },
   ] as const;
 
   const currentLang = languages.find(l => l.code === lang)!;
