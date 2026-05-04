@@ -63,7 +63,7 @@ const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="app-layout">
       <header className="app-header">
-        <div className="brand">Flex Paris</div>
+<NavLink to="/" className="brand">Flex Paris</NavLink>
 
         <div className="header-controls">
           <button
