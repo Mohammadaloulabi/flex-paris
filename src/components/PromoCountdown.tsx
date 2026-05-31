@@ -1,6 +1,12 @@
 import { useEffect, useState } from 'react'
 
-const TARGET = new Date('2026-05-30T23:59:59').getTime()
+const TARGET = getTargetTimestamp()
+
+function getTargetTimestamp() {
+  const target = new Date()
+  target.setMonth(target.getMonth() + 6)
+  return target.getTime()
+}
 
 function getTimeLeft() {
   const diff = TARGET - Date.now()
